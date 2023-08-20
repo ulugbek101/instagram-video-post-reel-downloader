@@ -10,7 +10,6 @@ def get_content(unknown_link: str, telegram_id: int) -> dict | None:
         data = get_response(unknown_link=unknown_link).json()
     except:
         data = None
-
     if not data:
         return None
 

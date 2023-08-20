@@ -11,6 +11,8 @@ def get_response(unknown_link: str) -> requests.Response | None:
     response = requests.get(url, headers=headers, params=querystring)
     try:
         response.raise_for_status()
+        print(response)
         return response
     except:
+        print(None)
         return None

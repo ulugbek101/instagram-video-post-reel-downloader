@@ -57,8 +57,9 @@ async def get_link(message: Message, state: FSMContext):
                     )
     else:
         await message.answer(
-            text="<i>Iltimos, havola yuboring 😐</i>"
+            text="<i>📽️ Story / 🎇 Post / 🎞️ Reel ni olishda muammo yuzaga keldi, bu muammo siz yuborgan foydalanuvchi profili yopiq bo'lishidan kelib chiqgan bo'lishi mumkin </i>"
         )
+        print(file)
     await dp.bot.delete_message(
         chat_id=message.chat.id,
         message_id=msg.message_id
